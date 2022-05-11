@@ -1,0 +1,120 @@
+@import url(./global.css);
+
+
+/* login-form  Css */
+
+main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.admin-login{
+    width: 400px;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0, .1);
+    border-radius: 8px;
+}
+
+.admin-login h2{
+/*     color: var(--text-color); */
+    text-align: center;
+/*     width: 80%; */
+/*     margin: 0 auto; */
+/*     animation: topToBottom 1300ms; */
+}
+
+
+.login-form-container label{
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+/*     color: var(--text-color); */
+    margin-bottom: .3rem;
+/*     animation: topToBottom 1300ms; */
+}
+.login-form-container input{
+    outline: none;
+    border: 1px solid var(--c1);
+    width: 100%;
+    padding: .3rem 1rem;
+/*     animation: bottomToTop 1300ms; */
+
+}
+
+.login-form-container input:focus{
+    border: 1px solid black;
+}
+
+.login-form-container span{
+    text-align: right;
+    color: var(--c1);
+}
+.login-form-container #check-box{
+    margin: auto 0;
+    width: 20px;
+    margin: 1rem 0;
+}
+.login-form-container .button{
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--c1);
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 1rem;
+    transition: all .5s ease-in;
+}
+
+.login-form-container .button:hover{
+    color: var(--c1);
+    background: white;
+}
+.login-form-container a{
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all .5s ease-in-out;
+}
+
+
+.with_log{
+    display: grid;
+    
+    place-items: center;
+}
+.with_log .log{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
+
+.with_log .log:hover{
+    border: 1px solid var(--c1);
+    padding: 0.3rem 4rem;
+    border-radius: .2rem;
+    color: var(--c1);
+}
+
+
+
+.with_log img{
+    width: 40px;
+    margin-right: 1rem;
+}
+
+
+.signup_page:hover .log{
+    padding: .5rem 3rem;
+}
+
+

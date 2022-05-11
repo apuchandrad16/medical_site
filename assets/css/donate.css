@@ -1,0 +1,155 @@
+.donate_page_html {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  height: max-content;
+}
+.donate_page_html .donate_form {
+  display: flex;
+  border: 1px solid #aaa;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+.donate_page_html .donate_form .personal_info {
+  padding: 1rem;
+}
+.donate_page_html .donate_form .personal_info > h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.donate_page_html .donate_form .personal_info > form {
+  display: flex;
+  flex-direction: column;
+}
+.donate_page_html .donate_form .card_info > form .two_input,
+.donate_page_html .donate_form .personal_info > form > .two_input {
+  display: flex;
+}
+.donate_page_html .donate_form .card_info > form .two_input input,
+.donate_page_html .donate_form .card_info > form input,
+.donate_page_html .donate_form .personal_info > form > .two_input input,
+.donate_page_html .donate_form .personal_info > form > input {
+  margin: 0.3rem 0.3rem;
+  padding: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+}
+
+.donate_page_html .donate_form .card_info {
+  padding: 1rem;
+}
+
+.donate_page_html .donate_form .card_info h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.donate_page_html .donate_form .card_info > form .two_input input {
+  width: 100%;
+}
+.donate_page_html .donate_form .card_info > form .donate_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.donate_page_html
+  .donate_form
+  .card_info
+  > form
+  .donate_line
+  > div:first-of-type {
+  background: var(--c3);
+  color: var(--c2);
+  padding: 0.395rem;
+  width: 100%;
+  margin-left: 0.3rem;
+  text-align: center;
+  font-weight: 500;
+}
+.donate_page_html
+  .donate_form
+  .card_info
+  > form
+  .donate_line
+  > div:last-of-type
+  input {
+  background: var(--c3);
+  color: var(--c2);
+  font-weight: 600;
+}
+.donate_page_html .donate_form .card_info > form > input {
+  width: 50%;
+  display: block;
+  margin: 0.4rem auto;
+  background: var(--c1);
+  color: var(--c2);
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+}
+.donate_page_html .donate_form .card_info > p {
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.payment_gatway {
+  margin: 2rem;
+}
+.payment_gatway ul li {
+  display: inline-block;
+}
+.payment_gatway ul li a img {
+  height: 30px;
+  width: 100px;
+  object-fit: contain;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.payment_gatway ul li a img:hover {
+  transform: scale(1.1);
+}
+.payment_gatway h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.payment_gatway_in_card {
+  user-select: none;
+  pointer-events: none;
+}
+
+.payment_gatway_in_card ul li {
+  display: inline-block;
+}
+.payment_gatway_in_card ul li a img {
+  height: 20px;
+}
+
+@media (max-width: 990px) {
+  .donate_page_html .donate_form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .donate_page_html .donate_form .card_info > form .two_input,
+  .donate_page_html .donate_form .personal_info > form > .two_input {
+    flex-direction: column;
+  }
+
+  .donate_page_html .donate_form .card_info > form .donate_line {
+    flex-direction: column;
+  }
+}

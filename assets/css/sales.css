@@ -1,0 +1,67 @@
+.customers {
+  width: 100%;
+}
+
+.topsales_container > p:nth-child(2){
+width: 75%;
+margin: 1rem auto;
+text-align: center;
+}
+.topsales_container{
+min-height: 60vw;
+}
+.customers td, .customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.customers tr:nth-child(even){background-color: #f2f2f2;}
+
+.customers tr:hover {background-color: #ddd;}
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--c3);
+  color: white;
+}
+
+
+.main_part {
+  margin: auto;
+  margin-top: 5rem;
+}
+h1 {
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /*! margin: 0 auto !important; */
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col{
+  /* flex: 90%; */
+  width: 80vw;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.col h3 {
+	font-size: 1.7rem;
+	text-align: center;
+	text-transform: uppercase;
+	background: #040087;
+	padding: .3rem .5rem;
+	font-weight: 600;
+	letter-spacing: 5px;
+	color: var(--c2);
+}
+
+ table > tbody > tr > td:nth-child(1){
+  width: 50px;
+}
